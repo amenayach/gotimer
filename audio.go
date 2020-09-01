@@ -16,11 +16,10 @@ import (
 	"github.com/faiface/beep/speaker"
 )
 
-// http://soundbible.com/2197-Analog-Watch-Alarm.html
+// sound source: http://soundbible.com/2197-Analog-Watch-Alarm.html
 
 // Play alarm sound
 func Play() {
-	// f, err := os.Open("C:\\Amen\\golang\\gotimer\\alarm.mp3")
 	f, err := os.Open("alarm.mp3")
 	if err != nil {
 		log.Fatal(err)
